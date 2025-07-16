@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Boxsizing</title>
+	<style>
+		div.container{
+			box-sizing: border-box;
+			width: 100%;
+			border: 1em solid;
+		}
+
+		div.box{
+			box-sizing: border-box;
+			width: 50%;
+			border: 1em solid red;
+			float: left;
+			padding: 20px;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="box">This div occupues the left half</div>
+
+		<div class="box">This div occupues the Right half</div>
+
+		<div style="clear:both;"></div>
+	</div>
+</body>
+</html>

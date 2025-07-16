@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TableStyling</title>
+	<style type="text/css">
+		caption {font-size: 25px; color: hotpink;}
+		thead{background-color: mediumspringgreen; color: green;}
+		tbody{color: blue; background-color: lightcyan; text-align: center;}
+		tfoot{color: red; background: coral; text-align: center;}
+		table{
+			border-collapse:collapse ;
+		}
+
+
+	</style>
+</head>
+<body>
+	<table border="3px" cellpadding="10px" cellspacing="10px" width="80%">
+		<caption>Table Heading</caption>
+		<thead>
+			<th>S.no</th><th>Name</th><th>Course</th>
+		</thead>
+		<tbody>
+			<tr><td>1</td><td>Sachin</td><td>Java Designing</td></tr>
+			<tr><td>2</td><td>Rahim</td><td>Python Programming</td></tr>
+			<tr><td>3</td><td>Dheeraj</td><td>Android Development</td></tr>
+		</tbody>
+		<tfoot>
+			<td>Total</td><td>Student</td><td>3</td>
+		</tfoot>
+	</table>
+</body>
+</html>

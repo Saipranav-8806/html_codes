@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Top tool tip</title>
+	<style>
+		span{
+			background: red;
+			padding: 20px;
+			border-radius: 10px;
+			position: relative;
+			color:whitesmoke;
+			bottom: 70px;
+			width: 100px;
+			visibility: hidden;
+		}
+		span:after{
+/*for small arrow beside red*/
+			content: "";
+			width: 0%;
+			height: 0%;
+			border-top: 10px solid #f44;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			position: absolute;
+			left: 40%;
+			bottom: -10%;
+		}
+		p{
+			margin: 140px auto;
+			position: relative ;
+			background: #0C3;
+			width: 200px;
+			padding: 15px;
+		}
+		p:hover span{
+			visibility: visible;
+		}
+		
+	</style>
+</head>
+<body>
+	<p>TEXT<span>This Is A Div</span></p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pseudo_Element</title>
+	<style type="text/css">
+		p::first-line{
+			color: blue;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		h1::before{
+			content: url('lightimage.jpeg');
+		}
+
+		h2::after{
+			content: url('lightimage.jpeg');
+		}
+
+		/*p:first-letter{
+			color: blue;
+			font-weight: bold;
+			font-size: 20px;
+			text-transform: uppercase;
+		}*/
+
+
+	</style>
+</head>
+<body>
+	<p>You few</p>
+	<h1>ht</h1>
+	<h2>ht</h2>
+	<p>you</p>
+	<p>only</p>
+	<p>live</p>
+	<p>once</p>
+	
+</body>
+</html>

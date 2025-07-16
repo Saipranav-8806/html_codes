@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transformation</title>
+	<style type="text/css">
+		#div1{
+			width: 200px;
+			height: 200px;
+			background-color: skyblue;
+			margin-left: 150px;
+			margin-top: 40PX;
+			cursor: pointer;
+			box-shadow: 10px 10px 10px 10px #ff0000;
+			text-shadow: 10px 19px 19px blueviolet;
+			float: right;
+
+		}
+		#div1:hover{
+			transform: rotate(80deg);
+			transition: 5s;
+		}
+		#div2{
+			width: 200px;
+			height: 200px;
+			background-color: rosybrown;
+			margin-left: 150px;
+			margin-top: 40PX;
+			cursor: pointer;
+			box-shadow: 10px 10px 10px 10px lightpink;
+			text-shadow: 10px 19px 19px blueviolet;
+
+		}
+		#div2:hover{
+			background-color: yellowgreen;
+			transform: skew(30deg);
+			transition: 3s;
+		}
+
+
+
+		#div3{
+		width: 200px;
+		height: 200px;
+		background-color: rosybrown;
+		margin-left: 150px;
+		margin-top: 40PX;
+		cursor: pointer;
+		box-shadow: 10px 10px 10px 10px lightpink;
+		text-shadow: 10px 19px 19px blueviolet;
+		
+		}
+		#div3:hover{
+		background-color: yellowgreen;
+		transform: scale(2);
+/*		only rangr 1-2*/
+		transition: 3s;
+		}
+
+		#div4{
+		width: 200px;
+		height: 200px;
+		background-color: rosybrown;
+		margin-left: 150px;
+		margin-top: 40PX;
+		cursor: pointer;
+		box-shadow: 10px 10px 10px 10px lightpink;
+		text-shadow: 10px 19px 19px blueviolet;
+		}
+		#div4:hover{
+		background-color: yellowgreen;
+		transform: translate(130px,20px);
+		transition: 3s;
+		}
+
+
+		#multipletransform{
+		width: 200px;
+		height: 200px;
+		background-color: rosybrown;
+		margin-left: 150px;
+		margin-top: 40PX;
+		cursor: pointer;
+		box-shadow: 10px 10px 10px 10px lightpink;
+		text-shadow: 10px 19px 19px blueviolet;
+		
+		}
+		#multipletransform:hover{
+		background-color: yellowgreen;
+		transform: rotate(50deg) scale(2);
+		transition: 5s;
+		}
+		#transformorigin{
+		width: 200px;
+		height: 200px;
+		background-color: rosybrown;
+		margin-left: 150px;
+		margin-top: 40PX;
+		cursor: pointer;
+		box-shadow: 10px 10px 10px 10px lightpink;
+		text-shadow: 10px 19px 19px blueviolet;
+		
+		}
+		#transformorigin:hover{
+		background-color: yellowgreen;
+		transform: rotate(45deg);
+		transform-origin: top right;
+
+/*		top right | top left | bottom right | bottom left| center center|*/
+
+		transition: 5s;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="div1"><b>Rotating Transformation effect</b></div>
+	<div id="div2"><b>skew Transformation effect</b></div>
+	<div id="div3"><b>Scale Transformation effect</b></div>
+	<div id="div4"><b>translate</b> Transformation effect</div>
+	<div id="multipletransform"><b>multipletransform</b> Transformation effect</div>
+	<div id="transformorigin"><b>ransform-origin</b> Transformation effect</div>
+
+</body>
+</html>

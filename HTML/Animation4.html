@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rotating Fliping Zooming</title>
+	<style type="text/css">
+		body{
+			background-color: #ccc;
+		}
+
+		.div1, .div2, .div3{
+			float: left;
+			width: 25%;
+			height: 500px;
+			background-repeat: no-repeat;
+			animation-name: example;
+			border: 7px solid whitesmoke;
+			background-size: cover;
+			box-sizing: border-box;
+		}
+
+		.div1{
+			margin: 20px;
+			animation-duration: 2s;
+			background: url(lightimage.jpeg);
+			transition: ease-in-out 2s; /*ease-in-out: slow start and end*/
+		}
+		.div1:hover{
+			transform: rotateY(-180deg);
+		}
+
+		.div2{
+			animation-duration: 1s;
+			background: url(lightimage.jpeg);
+			transition: ease-in-out 2s;
+		}
+		.div2:hover{
+			transform: scale(1.2,1.1);   /*that much zoom || How much it should shrinh=g or zoom*/
+		}
+		.div3{
+			margin: 20px;
+			animation-duration: 1s;
+			background: url(lightimage.jpeg);
+			background-size: cover;
+		}
+		.div3:hover{
+			transform: rotate(360deg);
+			transition: 4s ease;
+		}
+
+
+		.outer{
+			animation-duration: 3s;
+			overflow: hidden;
+			width: 25%;
+			height: 500px;
+			margin: 20px;
+			float: left;
+			border: 7px solid whitesmoke;
+			border-bottom: 3px solid red;
+			animation-name: example;
+		}
+		.div2{
+			width: 100% !important;
+			background-size:cover;
+			border: none;
+		}
+
+		@keyframes example{
+			from{transform: rotateX(90deg);}
+			to{transform: rotateX(0deg);}
+		}
+
+		@media(max width: 500px){
+			div{
+				margin: 5px !important;
+				width: 29% !important ;
+			}
+			.div2{
+				margin: 0px !important;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="outer">
+		<div class="div2"></div>
+	</div>
+	<div class="div3"></div>
+
+
+</body>
+</html>

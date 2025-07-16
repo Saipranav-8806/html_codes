@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Boder Image</title>
+	<style type="text/css">
+		.boder-image{
+			border: 10px solid transparent;/*This Sets the boder WIDTH */
+			border-image-source: url(passpic.jpg); /* The image used for the Border*/
+			border-image-slice: 30;/*How to slice the image 4/4/1 */
+			border-image-width: 10px; /*width of the border*/
+			border border-image-outset: 0; /*Spacing outside the border*/
+			border-image-repeat: stretch;/*How the image should be repeated   \\repeat||round||space*/
+		}
+	</style>
+</head>
+<body>
+	<div class="boder-image">
+		<p>Hi, Here we are using image as an Boder</p>
+	</div>
+</body>
+</html>

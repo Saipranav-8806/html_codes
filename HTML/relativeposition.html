@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Relative Position</title>
+	<style type="text/css">
+		div{
+			padding: 15px;
+		}
+		.div1{
+			width: 500px;
+			height: 300px;
+			background: #ff7;
+			margin: auto;
+			font: 18px arial;
+		}
+		.div2{
+			width: 150px;
+			height:100px;
+			background: #ff8888;
+			position: relative;
+			left: 100px;
+			top: 100px;
+			line-height: 1.4;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">Some Text In Parent DIV
+		<div class="div2">Child Div Moved left 100px and top 100px</div>
+	</div>
+</body>
+</html>

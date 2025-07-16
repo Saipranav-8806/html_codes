@@ -1,0 +1,12 @@
+.heading{
+	color: red;
+	font-size: 25px;
+	font-weight: normal;
+}
+.paragraph{
+	font-size: 20px;
+	color: green;
+}
+.m-50{
+	margin-top: 150px;
+}
